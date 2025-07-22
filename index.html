@@ -5,215 +5,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agri Nuture Limited</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      background-color: #f8fafc;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #0d3b26;
-      padding: 1rem 2rem;
-    }
-
-    nav img.logo {
-      height: 50px;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
-
-    nav ul li {
-      margin-left: 2rem;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-
-    .hero {
-      background-image: url('images/hero-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 6rem 2rem;
-      text-align: center;
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #f59e0b;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1rem;
-    }
-
-    .newsletter {
-      background-color: #e2f0e9;
-      padding: 2rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .newsletter input[type="email"] {
-      padding: 0.75rem;
-      width: 60%;
-      margin-right: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .newsletter button {
-      padding: 0.75rem 1.5rem;
-      background-color: #0d3b26;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      background-color: #0d3b26;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <nav>
-    <img src="images/logo.png" alt="Agri Nuture Logo" class="logo">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Agri Nuture</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="hero" id="home">
-    <h1>Welcome to Agri Nuture</h1>
-    <p>From soil to shelf – Transforming agriculture into value.</p>
-    <a href="#about" class="btn">Discover More</a>
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Nurturing Agriculture, Enriching Lives</h2>
+      <p>Empowering food security and sustainable value chains across Africa</p>
+      <a href="#contact" class="cta-btn">Get in Touch</a>
+    </div>
   </section>
 
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <p>Agri Nuture Limited is a full-cycle agribusiness focused on planting, rearing, and processing agricultural produce into high-quality food products. We’re blending traditional farming with innovative practices for a sustainable future in the FMCG space.</p>
-  </section>
-
-  <section id="products">
+  <section id="products" class="section">
     <h2 class="section-title">Our Products</h2>
     <div class="cards">
       <div class="card">
-        <img src="images/sweet-potato.jpg" alt="Sweet Potatoes">
-        <div class="card-content">
-          <h3>Sweet Potatoes</h3>
-          <p>Farm-fresh, nutritious and ideal for consumption and processing.</p>
-        </div>
+        <img src="images/maize.jpg" alt="Maize">
+        <h3>Maize</h3>
       </div>
       <div class="card">
-        <img src="images/coconut-oil.jpg" alt="Coconut Oil">
-        <div class="card-content">
-          <h3>Coconut Oil</h3>
-          <p>Cold-pressed and pure, extracted from carefully selected coconuts.</p>
-        </div>
+        <img src="images/sweetpotato.jpg" alt="Sweet Potato">
+        <h3>Sweet Potato</h3>
+      </div>
+      <div class="card">
+        <img src="images/habanero.jpg" alt="Habanero">
+        <h3>Habanero</h3>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <h2 class="section-title">Our Projects</h2>
+    <p>From farm to market – processing, distribution, and sustainability.</p>
     <div class="cards">
       <div class="card">
-        <img src="images/farm-project.jpg" alt="Farming">
-        <div class="card-content">
-          <h3>Integrated Farm</h3>
-          <p>Crop-livestock integration to enrich soil and maximize yield.</p>
-        </div>
+        <img src="images/cowpea.jpg" alt="Cowpea Project">
+        <h3>Cowpea Nitrogen Project</h3>
       </div>
       <div class="card">
         <img src="images/processing.jpg" alt="Processing">
-        <div class="card-content">
-          <h3>Processing Facility</h3>
-          <p>Transforming raw harvests into market-ready consumer goods.</p>
-        </div>
+        <h3>Agri-Processing Pilot</h3>
       </div>
     </div>
   </section>
 
-  <section class="newsletter" id="contact">
-    <h2>Stay Updated</h2>
-    <p>Subscribe to our newsletter and get updates on products and innovations.</p>
-    <form>
+  <section id="newsletter" class="section">
+    <h2>Subscribe to our Newsletter</h2>
+    <form id="newsletter-form">
       <input type="email" placeholder="Enter your email" required />
       <button type="submit">Subscribe</button>
     </form>
   </section>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Agri Nuture Limited. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for subscribing!');
+    });
+  </script>
 </body>
 
 </html>
-
