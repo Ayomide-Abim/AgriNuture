@@ -8,31 +8,78 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .hero { background: url('https://via.placeholder.com/1920x600') center/cover no-repeat; color: white; height: 50vh; display: flex; align-items: center; justify-content: center; }
+    .hero h1 { font-size: 3rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.6); }
+    section { padding: 4rem 0; }
+    footer { background-color: #2d4739; color: white; padding: 2rem 0; }
+  </style>
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
       <a class="navbar-brand" href="#">Agri Nuture</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container mt-5">
-    <h1>Welcome to Agri Nuture Limited</h1>
-    <p>We grow, process, and deliver quality agricultural products and food solutions.</p>
+  <!-- Hero -->
+  <div id="home" class="hero">
+    <h1>Agri Nuture Limited</h1>
   </div>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Us</h2>
+    <p>Agri Nuture Limited drives sustainable farming, livestock rearing, and agro‑processing to nurture communities and transform agricultural value chains.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Crop Farming</h5>
+          <p>High-quality yields of sweet potato, maize, habanero, cowpea and more.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Animal Husbandry</h5>
+          <p>Ethical rearing practices for poultry, goats and livestock.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Agro-Processing</h5>
+          <p>Transforming fresh produce into value-added products and FMCG lines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@agrinuture.com.ng">info@agrinuture.com.ng</a> | Phone: +234-XXX-XXX-XXXX</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Agri Nuture Limited. All rights reserved.</p>
+    <p><a href="#home" class="text-white">Back to top</a></p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
