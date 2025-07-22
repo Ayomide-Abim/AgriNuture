@@ -1,178 +1,80 @@
-/* styles.css */
-
-/* Reset and Base Styles */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  background-color: #f9f9f9;
-  color: #2e2e2e;
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #0a472e;
-  padding: 1rem 0;
-}
-
-header nav {
+.navbar {
+  background: #2e7d32;
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-header nav .logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-header nav ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-header nav ul li a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-header nav ul li a:hover {
-  color: #f4d35e;
+.logo {
+  height: 50px;
 }
 
 .hero {
-  background-color: #e1f5e9;
-  text-align: center;
+  background: url('images/farm-bg.jpg') center/cover no-repeat;
   padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: #0a472e;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.products, .projects {
-  padding: 60px 20px;
-  background-color: #fff;
-}
-
-.products h2, .projects h2 {
+  color: white;
   text-align: center;
-  color: #0a472e;
-  margin-bottom: 40px;
-  font-size: 2rem;
+  background-color: #4caf50;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #2e7d32;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.products-section,
+.projects-section,
+.newsletter-section {
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .card {
-  background-color: #ffffff;
+  background: #f0f0f0;
+  padding: 20px;
+  width: 200px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card .card-content {
-  padding: 20px;
-}
-
-.card .card-content h3 {
-  color: #0a472e;
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-.card .card-content p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #0a472e;
-  color: #fff;
-  padding: 12px 24px;
   border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #086c47;
-}
-
-.newsletter {
-  background-color: #e1f5e9;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.newsletter h2 {
-  font-size: 2rem;
-  color: #0a472e;
-  margin-bottom: 20px;
-}
-
-.newsletter form input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  max-width: 90%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.newsletter form button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #0a472e;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
 }
 
 footer {
-  background-color: #0a472e;
-  color: white;
-  text-align: center;
+  background: #2e7d32;
+  color: #fff;
   padding: 20px;
+  text-align: center;
 }
