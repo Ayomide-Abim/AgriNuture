@@ -1,88 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agri Nuture Limited</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Agri Nuture</h1>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="Agri Nuture Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="hero">
+  <section class="hero">
     <div class="hero-content">
-      <h2>Nurturing Agriculture, Enriching Lives</h2>
-      <p>Empowering food security and sustainable value chains across Africa</p>
-      <a href="#contact" class="cta-btn">Get in Touch</a>
+      <h1>Growing Value, Nurturing Futures</h1>
+      <p>From soil to shelf, transforming agriculture into impact-driven enterprise.</p>
+      <a href="#products" class="cta-button">Explore Our Products</a>
     </div>
   </section>
 
-  <section id="products" class="section">
-    <h2 class="section-title">Our Products</h2>
-    <div class="cards">
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <div class="card-grid">
       <div class="card">
-        <img src="images/maize.jpg" alt="Maize">
-        <h3>Maize</h3>
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Sweet Potatoes</h3>
       </div>
       <div class="card">
-        <img src="images/sweetpotato.jpg" alt="Sweet Potato">
-        <h3>Sweet Potato</h3>
-      </div>
-      <div class="card">
-        <img src="images/habanero.jpg" alt="Habanero">
-        <h3>Habanero</h3>
+        <img src="images/product2.jpg" alt="Product 2">
+        <h3>Habanero Pepper</h3>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <h2 class="section-title">Our Projects</h2>
-    <p>From farm to market – processing, distribution, and sustainability.</p>
-    <div class="cards">
+  <section id="projects" class="projects-section">
+    <h2>Our Projects</h2>
+    <div class="card-grid">
       <div class="card">
-        <img src="images/cowpea.jpg" alt="Cowpea Project">
-        <h3>Cowpea Nitrogen Project</h3>
-      </div>
-      <div class="card">
-        <img src="images/processing.jpg" alt="Processing">
-        <h3>Agri-Processing Pilot</h3>
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Farm Expansion Project</h3>
       </div>
     </div>
   </section>
 
-  <section id="newsletter" class="section">
-    <h2>Subscribe to our Newsletter</h2>
-    <form id="newsletter-form">
-      <input type="email" placeholder="Enter your email" required />
+  <section id="newsletter" class="newsletter-section">
+    <h2>Join Our Community</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Agri Nuture Limited. All rights reserved.</p>
+  <footer>
+    <p>© 2025 Agri Nuture Limited. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById('newsletter-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you for subscribing!');
-    });
-  </script>
 </body>
-
 </html>
-
-<link rel="stylesheet" href="styles.css" />
